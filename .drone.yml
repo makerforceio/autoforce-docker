@@ -1,5 +1,6 @@
 pipeline:
   docker-ros-base:
+    dockerfile: docker/ros-base/Dockerfile
     context: docker/ros-base
     image: plugins/docker
     registry: registry:5000
