@@ -2,6 +2,7 @@ FROM ubuntu:16.04
 
 RUN useradd -ms /bin/bash ros
 
+RUN sed -i 's/http:\/\/archive.ubuntu.com/http:\/\/mirror.0x.sg/g' /etc/apt/sources.list
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 RUN sed -i 's/^#\s*\(deb.*multiverse\)$/\1/g' /etc/apt/sources.list
 
