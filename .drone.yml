@@ -1,0 +1,10 @@
+pipeline:
+  docker-ros-base:
+    context: docker/ros-base
+    image: plugins/docker
+    registry: registry:5000
+    insecure: true
+    repo: registry:5000/ros-base
+    tags:
+      - latest
+
